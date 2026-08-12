@@ -1,1 +1,656 @@
+/* =========================================================
+   DAF FOUNDATION — WEBSITE 2
+   STYLE SHEET
+   ========================================================= */
 
+
+/* =========================================================
+   1. FOUNDATION VARIABLES
+   ========================================================= */
+
+:root {
+
+    --daf-green: #176b45;
+    --daf-green-dark: #0d4d32;
+
+    --daf-gold: #d6a72c;
+    --daf-yellow: #f3c742;
+
+    --daf-white: #ffffff;
+    --daf-black: #17231d;
+
+    --daf-muted: #5d6962;
+
+    --daf-border: #dfe7e1;
+
+    --daf-soft: #f5f8f5;
+
+    --daf-shadow:
+        0 14px 40px rgba(13, 77, 50, 0.12);
+
+}
+
+
+/* =========================================================
+   2. BASIC RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: var(--daf-white);
+    color: var(--daf-black);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. IMAGE CONTROL
+   ========================================================= */
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+/* =========================================================
+   4. LINKS
+   ========================================================= */
+
+a {
+
+    color: inherit;
+
+}
+
+
+/* =========================================================
+   5. FRONT COVER
+   ========================================================= */
+
+#daf-cover {
+
+    min-height: 100vh;
+    min-height: 100svh;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        70px
+        20px
+        50px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8fbf8 100%
+        );
+
+}
+
+
+/* =========================================================
+   6. WELCOME SECTION
+   ========================================================= */
+
+#welcome {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   7. WELCOME HEADING
+   ========================================================= */
+
+#welcome-heading {
+
+    margin:
+
+        0
+        0
+        28px;
+
+    padding: 0;
+
+    color: var(--daf-green-dark);
+
+    font-size:
+        clamp(
+            1.45rem,
+            5vw,
+            2.2rem
+        );
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.02em;
+
+}
+
+
+/* =========================================================
+   8. BRANDING
+   ========================================================= */
+
+#daf-branding {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    margin:
+        0
+        0
+        28px;
+
+}
+
+
+/* =========================================================
+   9. BRANDING IMAGES
+   ========================================================= */
+
+#daf-branding img {
+
+    width: auto;
+
+    max-width: 44vw;
+
+    max-height: 72px;
+
+    object-fit: contain;
+
+}
+
+
+/* =========================================================
+   10. FOUNDER LABEL
+   ========================================================= */
+
+#founder-label {
+
+    margin:
+        10px
+        0
+        12px;
+
+    color: var(--daf-green);
+
+    font-size: 0.9rem;
+
+    font-weight: 800;
+
+    letter-spacing:
+        0.16em;
+
+    text-transform: uppercase;
+
+}
+
+
+/* =========================================================
+   11. FOUNDER PHOTOGRAPH
+   ========================================================= */
+
+#founder-photo {
+
+    width:
+        min(
+            78vw,
+            330px
+        );
+
+    aspect-ratio: 4 / 5;
+
+    margin:
+        0
+        auto;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    box-shadow:
+        var(--daf-shadow);
+
+}
+
+
+/* =========================================================
+   12. FOUNDER NAME
+   ========================================================= */
+
+#founder-heading {
+
+    margin:
+        18px
+        0
+        28px;
+
+    color: var(--daf-black);
+
+    font-size:
+        clamp(
+            1.25rem,
+            5vw,
+            1.8rem
+        );
+
+    font-weight: 800;
+
+    line-height: 1.25;
+
+}
+
+
+/* =========================================================
+   13. GET TO KNOW US
+   ========================================================= */
+
+#entry {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+#get-to-know-us {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding:
+        13px
+        24px;
+
+    border-radius: 999px;
+
+    background:
+        var(--daf-green);
+
+    color:
+        var(--daf-white);
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: 800;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+#get-to-know-us:hover {
+
+    background:
+        var(--daf-green-dark);
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+#get-to-know-us:focus-visible {
+
+    outline:
+        3px solid
+        var(--daf-yellow);
+
+    outline-offset:
+        4px;
+
+}
+
+
+/* =========================================================
+   14. HAMBURGER BUTTON
+   ========================================================= */
+
+#menu-toggle {
+
+    position: fixed;
+
+    top: 18px;
+    right: 18px;
+
+    z-index: 2000;
+
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0;
+
+    border:
+        1px solid
+        var(--daf-border);
+
+    border-radius: 14px;
+
+    background:
+        rgba(255, 255, 255, 0.97);
+
+    color:
+        var(--daf-green-dark);
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 22px
+        rgba(13, 77, 50, 0.10);
+
+}
+
+
+/* =========================================================
+   15. HAMBURGER LINES
+   ========================================================= */
+
+#menu-toggle span {
+
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    background:
+        currentColor;
+
+    border-radius: 2px;
+
+}
+
+
+/* =========================================================
+   16. MAIN NAVIGATION
+   ========================================================= */
+
+#main-navigation {
+
+    position: fixed;
+
+    inset:
+        0;
+
+    z-index: 1500;
+
+    overflow-y: auto;
+
+    padding:
+        92px
+        22px
+        40px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.99
+        );
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+/*
+   JavaScript will add the
+   .menu-open class when the
+   hamburger is activated.
+*/
+
+body.menu-open #main-navigation {
+
+    transform:
+        translateX(0);
+
+}
+
+
+/* =========================================================
+   17. NAVIGATION INNER
+   ========================================================= */
+
+#navigation-inner {
+
+    width: 100%;
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+}
+
+
+/* =========================================================
+   18. NAVIGATION SECTIONS
+   ========================================================= */
+
+#navigation-inner section {
+
+    margin:
+        0
+        0
+        28px;
+
+}
+
+
+/* =========================================================
+   19. NAVIGATION HEADINGS
+   ========================================================= */
+
+#navigation-inner h2 {
+
+    margin:
+        0
+        0
+        8px;
+
+    color:
+        var(--daf-green);
+
+    font-size:
+        0.82rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.12em;
+
+}
+
+
+/* =========================================================
+   20. NAVIGATION LINKS
+   ========================================================= */
+
+#navigation-inner a {
+
+    display: block;
+
+    padding:
+        13px
+        0;
+
+    border-bottom:
+        1px solid
+        var(--daf-border);
+
+    color:
+        var(--daf-black);
+
+    text-decoration:
+        none;
+
+    font-size:
+        1rem;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =========================================================
+   21. NAVIGATION LINK FOCUS
+   ========================================================= */
+
+#navigation-inner a:focus-visible {
+
+    outline:
+        3px solid
+        var(--daf-yellow);
+
+    outline-offset:
+        4px;
+
+}
+
+
+/* =========================================================
+   22. RESPONSIVE TABLET
+   ========================================================= */
+
+@media (min-width: 700px) {
+
+    #daf-cover {
+
+        padding:
+            90px
+            32px
+            70px;
+
+    }
+
+
+    #daf-branding {
+
+        gap: 24px;
+
+    }
+
+
+    #daf-branding img {
+
+        max-height: 82px;
+
+    }
+
+
+    #founder-photo {
+
+        width:
+            min(
+                55vw,
+                360px
+            );
+
+    }
+
+
+    #menu-toggle {
+
+        top: 22px;
+        right: 24px;
+
+        width: 58px;
+        height: 58px;
+
+    }
+
+}
+
+
+/* =========================================================
+   23. REDUCED MOTION
+   ========================================================= */
+
+@media (
+    prefers-reduced-motion: reduce
+) {
+
+    html {
+
+        scroll-behavior:
+            auto;
+
+    }
+
+    * {
+
+        transition:
+            none !important;
+
+    }
+
+}
